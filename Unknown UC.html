@@ -108,6 +108,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">(function () {
 	if ("geolocation" in navigator && typeof navigator.geolocation.getCurrentPosition === "function") {
 		// setup the success and error callbacks as well as the options object
@@ -175,9 +176,9 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 
 
 
+
 </script><tw-passagedata pid="1" name="Start" tags="" position="887,580" size="100,100">/%if you want to start a passage by playing audio, use this%/
 
-&lt;&lt;audio &quot;intro-ottawa&quot; play&gt;&gt;
 The world you see is not the only one. This device carries with it a multidimensional transponder. 
 
 /%the next bit calls the location variables, which initializes our access of the geolocation api%/
@@ -222,7 +223,6 @@ remember, decimal degrees. You can click on a google map, and the point you clic
 
 /%if you were going to use audio, put the files in the same folder as your html (this precludes us from useing the philome.la twine hosting service, by the way, since you can only load the html; you could use full http links to sound files stored somewhere else, but you&#39;ll run into loading and caching problems)%/
 
-&lt;&lt;cacheaudio &quot;ufo&quot; &quot;sounds/173948__johnsonbrandediting__musical-saw-ascending-ufo.mp3&quot;&gt;&gt;
 
 </tw-passagedata><tw-passagedata pid="3" name="old-code calibrate the scan" tags="" position="1151,731" size="100,100">...calibrating...
 
@@ -261,8 +261,7 @@ Scanned: $Scanned
 
 
 
-</tw-passagedata><tw-passagedata pid="6" name="Foundation Stone" tags="" position="435,442" size="100,100">&lt;&lt;audio &quot;childsnightmare&quot; fadein &gt;&gt;
-[img[https://openclipart.org/image/300px/svg_to_png/28414/PBCrichton-Malware-Hazard-Symbol-Red.png]]
+</tw-passagedata><tw-passagedata pid="6" name="Foundation Stone" tags="" position="435,442" size="100,100">[img[https://openclipart.org/image/300px/svg_to_png/28414/PBCrichton-Malware-Hazard-Symbol-Red.png]]
 
 Currently you are at $Location.latitude and $Location.longitude
 
@@ -277,7 +276,6 @@ Area of instability found. Current position: Foundation Stone
 Currently you are at $Location.latitude and $Location.longitude
 
 Area of instability found. Current position: Futuro House.
-&lt;&lt;audio &quot;ufo&quot; play&gt;&gt;
 
 [[Rescan]]
 
