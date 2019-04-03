@@ -203,7 +203,7 @@ First, you need to [[calibrate the scan]].
 
 /%this sets up our variables for our geotriggers%/
 
-&lt;&lt;set $buffer = 0.0005&gt;&gt;
+&lt;&lt;set $buffer = 0.0002&gt;&gt;
 &lt;&lt;set $Scanned = 0&gt;&gt;
 
 &lt;&lt;set $stonelat = -35.238800&gt;&gt; 
@@ -251,9 +251,9 @@ Scanner Calibration Engaged.
 
 Scanned: $Scanned
 
-&lt;&lt;if approxEqual($Location.latitude, $flyingsaucerlat) and approxEqual($Location.longitude, $flyingsaucerlong)&gt;&gt;
+&lt;&lt;if approxEqual($Location.latitude, $flyingsaucerlat, $buffer) and approxEqual($Location.longitude, $flyingsaucerlong, $buffer)&gt;&gt;
 	&lt;&lt;include &quot;Futuro House&quot;&gt;&gt;
-	&lt;&lt;elseif approxEqual($Location.latitude, $stonelat) and approxEqual($Location.longitude, $stonelong)&gt;&gt;
+	&lt;&lt;elseif approxEqual($Location.latitude, $stonelat, $buffer) and approxEqual($Location.longitude, $stonelong, $buffer)&gt;&gt;
     	&lt;&lt;include &quot;Foundation Stone&quot;&gt;&gt;    
 	&lt;&lt;else&gt;&gt;
 	&lt;&lt;include &quot;This zone is clear&quot;&gt;&gt;
