@@ -128,7 +128,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 			positionOptions = {
 				timeout: 31000, 
 				enableHighAccuracy: true,
-				maximumAge : 120000 // (in ms) cached results may not be older than 1 minute
+				maximumAge : 60000 // (in ms) cached results may not be older than 1 minute
 				                   // this can probably be tweaked upwards a bit
 			};
 
@@ -198,7 +198,7 @@ First, you need to [[calibrate the scan]].
 
 </tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="885,410" size="100,100">/%this is a comment. Below is the bit the player will see when the game starts%/
 
-[img[http://fc07.deviantart.net/fs25/f/2008/181/f/f/Trippy_Design_by_Cru_the_Dwarf.jpg]]
+[img[https://fc07.deviantart.net/fs25/f/2008/181/f/f/Trippy_Design_by_Cru_the_Dwarf.jpg]]
 [[Start]] 
 
 /%this sets up our variables for our geotriggers%/
